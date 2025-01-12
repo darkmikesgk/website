@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://maestri.me
+
+# Sitemaps
+Sitemap: https://maestri.me/sitemap.xml

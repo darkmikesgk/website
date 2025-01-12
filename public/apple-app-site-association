@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "B2Y384F77B.app.maestri",
+        "paths": [
+           "/clients/invite*",
+           "/employees/invite*",
+           "/salons*"
+        ]
+      }
+    ]
+  },
+  "appclips": {
+    "apps": [
+      "B2Y384F77B.app.maestri.clip"
+    ]
+  }
+}
