@@ -1,9 +1,11 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.maestri.android_app",
-    "sha256_cert_fingerprints":
-    ["E2:E5:38:DF:D8:AD:A4:41:41:30:4D:FE:2F:D1:AB:1F:63:A0:A8:C6:33:DE:B0:EB:E2:28:56:07:6E:9F:86:D7"]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.maetry.app",
+      "sha256_cert_fingerprints":
+      ["19:01:B7:38:62:A6:A7:53:48:C5:E7:BA:35:9D:A1:B2:61:5A:09:9D:1B:10:4B:9F:07:0D:37:22:24:CA:84:E2"]
+    }
   }
-}]
+]

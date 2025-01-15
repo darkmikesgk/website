@@ -35,7 +35,7 @@ const LicensePolicy = () => {
             <div className="w-[90%] xl:w-full items-center flex relative">
               <TextFabric
                 id={6}
-                text={`Maestri Mobile Application End-User License Agreement (EULA)
+                text={`Maetry Mobile Application End-User License Agreement (EULA)
 `}
               ></TextFabric>
               <button
@@ -53,13 +53,13 @@ const LicensePolicy = () => {
             <div className="flex flex-col gap-y-4 w-[96%] text-[4vw] mt-[2vh] xl:text-[1.167vw] font-light ">
               <p>
                 This End-User License Agreement (&quot;Agreement&quot;) governs
-                your use of the Maestri mobile application
+                your use of the Maetry mobile application
                 (&quot;Application&quot;). By downloading, installing, or using
                 the Application, you agree to be bound by the terms of this
                 Agreement.
               </p>
               <p>
-                License Grant Maestri grants you a revocable, non-exclusive,
+                License Grant Maetry grants you a revocable, non-exclusive,
                 non-transferable, limited license to download, install, and use
                 the Application. The Application is available for personal and
                 commercial use by clients and service providers, respectively,
@@ -76,32 +76,32 @@ const LicensePolicy = () => {
                 Content and Services <br /> - The Application provides a
                 platform for connecting clients with service providers and for
                 service providers to manage their bookings and analytics. <br />
-                - Maestri is not responsible for the quality of services
+                - Maetry is not responsible for the quality of services
                 provided by service providers.
               </p>
               <p>
                 User Contributions <br /> - Users are responsible for the
                 accuracy of the information they provide on the Application.
-                <br />- Maestri is not responsible for any user-generated
+                <br />- Maetry is not responsible for any user-generated
                 content, including but not limited to reviews and service
                 descriptions.
               </p>
               <p>
                 Termination <br /> This Agreement is effective until terminated
-                by you or Maestri. Maestri may terminate this Agreement at any
+                by you or Maetry. Maetry may terminate this Agreement at any
                 time without notice if you fail to comply with any of its terms.
               </p>
               <p>
                 Disclaimer of Warranties <br />
                 The Application is provided &quot;as is&quot; and &quot;as
-                available&quot; without any warranties of any kind. Maestri
+                available&quot; without any warranties of any kind. Maetry
                 disclaims all warranties, either express or implied, including
                 but not limited to warranties of merchantability, fitness for a
                 particular purpose, and non-infringement.
               </p>
               <p>
                 Limitation of Liability <br />
-                To the extent not prohibited by law, in no event shall Maestri
+                To the extent not prohibited by law, in no event shall Maetry
                 be liable for personal injury or any incidental, special,
                 indirect, or consequential damages whatsoever arising out of or
                 related to your use of the Application.
@@ -112,7 +112,7 @@ const LicensePolicy = () => {
               </p>
               <p>
                 Contact Information If you have any questions about this
-                Agreement, please contact us at support@maestri.me
+                Agreement, please contact us at support@maetry.com
               </p>
             </div>
           </div>

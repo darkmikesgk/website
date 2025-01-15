@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
             <div className=" items-center flex relative">
               <TextFabric
                 id={6}
-                text={`Privacy Policy for Maestri`}
+                text={`Privacy Policy for Maetry`}
               ></TextFabric>
               <button
                 className="right-[6vw] xl:right-[5vw] z-[3001] fixed"
@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
             </div>
             <div className="flex flex-col gap-y-4 w-[90%] text-[4vw] xl:text-[1.167vw] font-light ">
               <p>
-                Welcome to Maestri! We are committed to protecting the privacy
+                Welcome to Maetry! We are committed to protecting the privacy
                 and security of our users. This Privacy Policy outlines how we
                 collect, use, disclose, and safeguard your information when you
                 use our mobile application.
@@ -92,7 +92,7 @@ const PrivacyPolicy = () => {
               </p>
               <p>
                 User Responsibility <br /> - Users are responsible for the
-                quality of services provided and received. Maestri is a platform
+                quality of services provided and received. Maetry is a platform
                 for connecting users and does not bear responsibility for the
                 services rendered.
               </p>
@@ -101,7 +101,7 @@ const PrivacyPolicy = () => {
                 account at any time, and their data will be anonymized. Records
                 created by users (e.g., salon appointments) will be retained to
                 ensure the functionality for other users. <br />- Data will be
-                stored until deemed unnecessary by Maestri Hub LLC and will be
+                stored until deemed unnecessary by Maetry Hub LLC and will be
                 deleted at the company&apos;s discretion.
               </p>
               <p>
@@ -111,12 +111,12 @@ const PrivacyPolicy = () => {
               </p>
               <p>
                 External Links <br />- This app contains links to external sites
-                and services. Maestri Hub LLC is not responsible for the privacy
+                and services. Maetry LLC is not responsible for the privacy
                 practices of these external sites.
               </p>
               <p>
                 Contact Information <br />- For any questions or complaints,
-                please contact us at support@maestri.me
+                please contact us at support@maetry.com
               </p>
               <p>
                 Consent and Agreement <br />- Continued use of the app and

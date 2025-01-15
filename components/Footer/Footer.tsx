@@ -46,7 +46,7 @@ const Footer = () => {
 
         <div className="flex flex-col gap-y-2 xl:flex-row items-center gap-x-4">
           <Link
-            href="mailto:support@maestri.me"
+            href="mailto:support@maetry.com"
             className="flex gap-x-1 items-center"
           >
             <Image
@@ -56,7 +56,7 @@ const Footer = () => {
               height={24}
               className="dark:invert xl:w-[2vw] md:w-[4vw]"
             />{" "}
-            support@maestri.me
+            support@maetry.com
           </Link>
           <Link
             href={"https://t.me/maestri_app"}

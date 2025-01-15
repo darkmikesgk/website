@@ -28,7 +28,7 @@ const Vitaliy = () => {
 
           <div className="flex flex-col ">
             <TextFabric id={4} text={"Support team"}></TextFabric>
-            <TextFabric id={2} text={"Maestri"}></TextFabric>
+            <TextFabric id={2} text={"Maetry"}></TextFabric>
           </div>
         </div>
         <button

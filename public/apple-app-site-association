@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appID": "B2Y384F77B.app.maestri",
+        "appID": "B2Y384F77B.com.maetry",
         "paths": [
            "/clients/invite*",
            "/employees/invite*",
@@ -14,7 +14,7 @@
   },
   "appclips": {
     "apps": [
-      "B2Y384F77B.app.maestri.clip"
+      "B2Y384F77B.com.maetry.clip"
     ]
   }
 }

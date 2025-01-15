@@ -31,9 +31,9 @@ const LandingPage = () => {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Maestri",
-              url: "https://maestri.me",
-              logo: "https://maestri.me/images/tild3031-3665-4331-b066-353633643661__photo.svg",
+              name: "Maetry",
+              url: "https://maetry.com",
+              logo: "https://maetry.com/images/tild3031-3665-4331-b066-353633643661__photo.svg",
               sameAs: [
                 "https://www.instagram.com/maestri_app",
                 "https://t.me/maestri_channel",
@@ -49,42 +49,42 @@ const LandingPage = () => {
         />
 
         <html lang="en"></html>
-        <title>Maestri - Info Page</title>
+        <title>Maetry - Info Page</title>
         <meta
           name="description"
-          content="Efficient Management of Your Beauty Salon and Business Download Maestri and take your beauty business to the next level!"
+          content="Efficient Management of Your Beauty Salon and Business Download Maetry and take your beauty business to the next level!"
         />
         <meta
           name="keywords"
-          content="maestri,beauty salon,booking,management,appointment,crm,automation,salon,service,nails,lashes,barber"
+          content="maetry,beauty salon,booking,management,appointment,crm,automation,salon,service,nails,lashes,barber"
         />
 
         {/* main */}
 
-        <meta property="og:title" content="Maestri" />
+        <meta property="og:title" content="Maetry" />
         <meta
           property="og:description"
           content="IT-service for beauty industry"
         />
         <meta
           property="og:image"
-          content="https://maestri.me/_next/static/media/logo.30e07f0a.svg"
+          content="https://maetry.com/_next/static/media/logo.30e07f0a.svg"
         />
-        <meta property="og:url" content="https://maestri.me" />
+        <meta property="og:url" content="https://maetry.com" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="Maestri" />
+        <meta property="og:site_name" content="Maetry" />
         {/* OpenGraph */}
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Maestri" />
+        <meta name="twitter:title" content="Maetry" />
         <meta
           name="twitter:description"
           content="IT-service for beauty industry"
         />
         <meta
           name="twitter:image"
-          content="https://maestri.me/_next/static/media/logo.30e07f0a.svg"
+          content="https://maetry.com/_next/static/media/logo.30e07f0a.svg"
         />
 
         {/* TwitterCards */}
@@ -145,7 +145,7 @@ const LandingPage = () => {
                 <TextFabric
                   id={2}
                   text={
-                    "maestri allows entrepreneurs to grow their business from anywhere in the world via a mobile app"
+                    "maetry allows entrepreneurs to grow their business from anywhere in the world via a mobile app"
                   }
                 ></TextFabric>
               </div>
@@ -171,7 +171,7 @@ const LandingPage = () => {
               title={"Julia"}
               role={"Owner of a chain PROmanicure"}
               description={
-                "Maestri helps me plan every day in the salon. I understand how many clients are registered and for which services, who is new and who is regular. The client base is formed without my participation"
+                "Maetry helps me plan every day in the salon. I understand how many clients are registered and for which services, who is new and who is regular. The client base is formed without my participation"
               }
             ></Review>
             <Review
@@ -179,7 +179,7 @@ const LandingPage = () => {
               title={"Nikita"}
               role={"founder  Lui Philipp"}
               description={
-                "I know a lot of beauty salons that don't use online enrollment. We need to look at what mistakes our competitors are making and do better. Our main flow of clients comes through maestri"
+                "I know a lot of beauty salons that don't use online enrollment. We need to look at what mistakes our competitors are making and do better. Our main flow of clients comes through maetry"
               }
             ></Review>
 
@@ -188,7 +188,7 @@ const LandingPage = () => {
               title={"Sofia"}
               role={"Manager of Bonny beauty salon"}
               description={
-                "The app is constantly being improved together with our network of salons. At maestri, we follow analytics and monitor feedback. This helps us to work on the quality of service and improve the level of service"
+                "The app is constantly being improved together with our network of salons. At maetry, we follow analytics and monitor feedback. This helps us to work on the quality of service and improve the level of service"
               }
             ></Review>
             <Review
@@ -220,7 +220,7 @@ const LandingPage = () => {
           className="w-[93%] px-[3.5%] flex justify-center flex flex-col gap-y-[5vh] xl:gap-y-[8vh] scroll-mt-[100px]"
         >
           <div className="flex flex-col w-full">
-            <TextFabric text={"maestri features"} id={3}></TextFabric>
+            <TextFabric text={"maetry features"} id={3}></TextFabric>
             <TextFabric
               text={"we adapt to any size business"}
               id={1}
@@ -263,7 +263,7 @@ const LandingPage = () => {
               <Question
                 id={1}
                 title="What features does the app provide?"
-                answer="To optimize the work of beauty salons maestri offers the following features: online appointment, automatic sending of notifications, formation of client base, analysis of financial indicators and integration with other services"
+                answer="To optimize the work of beauty salons maetry offers the following features: online appointment, automatic sending of notifications, formation of client base, analysis of financial indicators and integration with other services"
               ></Question>
               <Question
                 id={2}
@@ -282,7 +282,7 @@ const LandingPage = () => {
               ></Question>
               <Question
                 id={5}
-                title="Will I be able to add a link to a social media post via maestri?"
+                title="Will I be able to add a link to a social media post via maetry?"
                 answer="Yes, you can"
               ></Question>
             </div>

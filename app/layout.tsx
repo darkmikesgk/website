@@ -15,7 +15,7 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: "Maestri",
+  title: "Maetry",
   description: "Automate your business processes",
   icons: {
     icon: "/images/favicon.png",
