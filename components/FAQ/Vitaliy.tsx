@@ -32,7 +32,7 @@ const Vitaliy = () => {
           </div>
         </div>
         <button
-          onClick={() => router.push("https://t.me/maestri_app")}
+                      onClick={() => router.push("https://t.me/maetry_app")}
           className="p-[5%] bg-white dark:active:bg-lightText/40 active:bg-dark-bg/10 transition-all duration-100 dark:bg-dark-bg rounded-[15px] min-h-[45px] flex w-full items-center mt-[2%] justify-center"
         >
           <TextFabric id={5} text={"ask questions"}></TextFabric>

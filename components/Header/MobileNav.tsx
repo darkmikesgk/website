@@ -31,7 +31,7 @@ export const MobileNav = () => {
               className="dark:invert"
             />
           </Link>
-          <Link href={"https://t.me/maestri_app"}>
+                      <Link href={"https://t.me/maetry_app"}>
             <Image
               src={Telegram}
               alt={""}
@@ -40,7 +40,7 @@ export const MobileNav = () => {
               className="dark:invert"
             />
           </Link>
-          <Link href={"https://instagram.com/maestri.app"}>
+                      <Link href={"https://instagram.com/maetry.co"}>
             <Image
               src={Instagram}
               alt={""}

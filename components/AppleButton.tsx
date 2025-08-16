@@ -11,7 +11,7 @@ const AppleButton = () => {
   return (
     <button
       onClick={() =>
-        router.push("https://apps.apple.com/ru/app/maestri/id6469101735")
+        router.push("https://apps.apple.com/app/id6746678571")
       }
       className=" active:scale-105 xl:hover:scale-105 transition-all"
     >

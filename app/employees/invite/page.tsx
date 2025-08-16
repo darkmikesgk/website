@@ -6,7 +6,7 @@ import logo from "@/public/images/logo.svg"
 import TextFabric from "@/components/TextFabric"
 import ThemeSwitcher from "@/components/ThemeSwitcher"
 import InviteButton from "@/components/invite/InviteButton"
-import appstore from "@/public/images/appstore.svg"
+import AppleButton from "@/components/AppleButton"
 import { useRouter } from "next/navigation"
 
 import phones from "@/public/images/phones_customer.png"
@@ -65,20 +65,9 @@ const ClientInvite = () => {
               </Suspense>
             </div>
 
-            <button
-              onClick={() =>
-                router.push(
-                  "https://apps.apple.com/ru/app/maestri/id6469101735"
-                )
-              }
-              className="mt-[1vh]"
-            >
-              <Image
-                src={appstore}
-                alt={""}
-                className="w-[35vw] md:w-[25vw] xl:w-[10vw] hover:scale-105 transition-all"
-              ></Image>
-            </button>
+            <div className="mt-[1vh]">
+              <AppleButton />
+            </div>
           </div>
         </div>
 

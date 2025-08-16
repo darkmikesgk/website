@@ -15,7 +15,7 @@ const FreeTrial = ({ type }: TrialProps) => {
       return (
         <button
           onClick={() =>
-            router.push("https://apps.apple.com/ru/app/maestri/id6469101735")
+            router.push("https://apps.apple.com/app/id6746678571")
           }
           className="w-full dark:active:bg-lightText/60 active:bg-dark-bg/10 transition-all duration-100 h-[50px] md:h-[70px] rounded-[10px] text-[14px] md:text-[20px] bg-white dark:bg-dark-bg"
         >
@@ -26,7 +26,7 @@ const FreeTrial = ({ type }: TrialProps) => {
       return (
         <button
           onClick={() =>
-            router.push("https://apps.apple.com/ru/app/maestri/id6469101735")
+            router.push("https://apps.apple.com/app/id6746678571")
           }
           className="mr-[3%]"
         >

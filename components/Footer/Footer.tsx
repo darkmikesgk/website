@@ -59,7 +59,7 @@ const Footer = () => {
             support@maetry.com
           </Link>
           <Link
-            href={"https://t.me/maestri_app"}
+            href={"https://t.me/maetry_app"}
             className="flex gap-x-1 items-center"
           >
             <Image
@@ -69,10 +69,10 @@ const Footer = () => {
               height={24}
               className="dark:invert xl:w-[2vw] md:w-[4vw]"
             />{" "}
-            @maestri_app
+            @maetry_app
           </Link>
           <Link
-            href={"https://instagram.com/maestri.app"}
+            href={"https://instagram.com/maetry.co"}
             className="flex gap-x-1 items-center"
           >
             <Image
@@ -82,7 +82,7 @@ const Footer = () => {
               height={24}
               className="dark:invert xl:w-[2vw] md:w-[4vw]"
             />{" "}
-            @maestri.app
+            @maetry.co
           </Link>
         </div>
       </div>

@@ -35,8 +35,8 @@ const LandingPage = () => {
               url: "https://maetry.com",
               logo: "https://maetry.com/images/tild3031-3665-4331-b066-353633643661__photo.svg",
               sameAs: [
-                "https://www.instagram.com/maestri_app",
-                "https://t.me/maestri_channel",
+                "https://www.instagram.com/maetry.co",
+                "https://t.me/maetry_app",
               ],
               contactPoint: {
                 "@type": "ContactPoint",
