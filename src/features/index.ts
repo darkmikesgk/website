@@ -1,0 +1,6 @@
+export * from './header'
+export * from './footer'
+export * from './faq'
+export * from './reviews'
+export * from './features'
+export * from './ambassador'

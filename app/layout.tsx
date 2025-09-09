@@ -1,11 +1,6 @@
 import type { Metadata } from "next"
-import "../styles/globals.css"
-import Header from "@/components/Header/Header"
-import StoreProvider from "@/components/StoreProvider"
-import MobileHeader from "@/components/Header/MobileHeader"
-import Footer from "@/components/Footer/Footer"
-import PrivacyPolicy from "@/components/Footer/PrivacyPolicy"
-import LicensePolicy from "@/components/Footer/LicensePolicy"
+import "@/styles/globals.css"
+import { StoreProvider } from "@/shared/store"
 import { Manrope } from "next/font/google"
 
 const manrope = Manrope({

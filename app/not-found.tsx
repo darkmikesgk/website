@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "@/styles/GradientAnimation.module.css"
-import TextFabric from "@/components/TextFabric"
+import { TextFabric } from "@/shared/ui"
 import Link from "next/link"
 
 const NotFound = () => {

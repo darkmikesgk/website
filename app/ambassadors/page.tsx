@@ -1,10 +1,9 @@
 "use client"
 
 import React from "react"
-import Header from "@/components/Header/Header"
-import MobileHeader from "@/components/Header/MobileHeader"
-import Footer from "@/components/Footer/Footer"
-import AmbassadorFeature from "@/components/ambassador/AmbassadorFeature"
+import { Header, MobileHeader } from "@/features/header"
+import { Footer } from "@/features/footer"
+import { AmbassadorFeature } from "@/features/ambassador"
 import styles from "@/styles/GradientAnimation.module.css"
 import Head from "next/head"
 
