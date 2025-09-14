@@ -1,0 +1,211 @@
+{
+  "common": {
+    "title": "Maetry",
+    "description": "Automate your business processes",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "confirm": "Confirm"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "features": "Features",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "ambassadors": "Partners",
+    "clients": "Clients",
+    "employees": "Employees",
+    "reviews": "Reviews",
+    "menu": "Menu"
+  },
+  "header": {
+    "freeTrial": "Free Trial"
+  },
+  "ambassador": {
+    "title": "Partnership Program",
+    "subtitle": "Earn by helping beauty salons automate their business",
+    "aboutTitle": "Maetry — beauty salon management service",
+    "aboutDescription": "Maetry helps automate processes, attract clients and control business in one application.",
+    "becomePartner": "Become a Partner",
+    "readyToPartner": "Ready to become a partner?",
+    "startEarning": "Start Earning",
+    "partnerDescription": "Join our partnership program and earn by helping beauty salons grow",
+    "features": {
+      "appointments": {
+        "title": "Client Appointments",
+        "problems": [
+          "Appointments are kept in notebooks and calendars, get lost",
+          "No visibility of free slots",
+          "Difficult to distribute appointments between masters"
+        ],
+        "solutions": [
+          "All appointments centralized in the app",
+          "Visual daily schedule",
+          "Display all masters on one screen"
+        ],
+        "benefits": [
+          "Administrator time savings",
+          "More clients through organization",
+          "Business control from phone"
+        ]
+      },
+      "schedule": {
+        "title": "Work Schedule",
+        "problems": [
+          "Clients call to check schedule",
+          "Hard to set up master shifts",
+          "Schedule changes take a lot of time"
+        ],
+        "solutions": [
+          "Flexible working days setup",
+          "Individual employee schedules",
+          "Edit only needed days"
+        ],
+        "benefits": [
+          "Fewer calls to salon",
+          "Clear master workload",
+          "Salon works without overlaps"
+        ]
+      },
+      "services": {
+        "title": "Service Catalog",
+        "problems": [
+          "Services kept in memory or notebook",
+          "Unclear who provides service and at what price",
+          "Clients not prepared for procedures"
+        ],
+        "solutions": [
+          "Add services from ready list or manually",
+          "Individual prices and descriptions for masters",
+          "Client preparation tips for procedures"
+        ],
+        "benefits": [
+          "Administrator time savings",
+          "Error elimination",
+          "Service quality improvement"
+        ]
+      },
+      "clients": {
+        "title": "Client Database",
+        "problems": [
+          "No client history and contacts",
+          "Can't understand who stopped coming",
+          "Everything kept in memory"
+        ],
+        "solutions": [
+          "Add clients manually or through invitations",
+          "Track visit and service history"
+        ],
+        "benefits": [
+          "Client activity analysis",
+          "Loyalty increase",
+          "Database for newsletters and marketing"
+        ]
+      },
+      "employees": {
+        "title": "Employees",
+        "problems": [
+          "No control over master work",
+          "Unclear positions and salaries",
+          "Hard to track workload"
+        ],
+        "solutions": [
+          "Create roles and positions",
+          "Setup access and salaries",
+          "Track clients for specific masters"
+        ],
+        "benefits": [
+          "Transparency and control",
+          "Salary automation",
+          "Convenient client distribution"
+        ]
+      },
+      "salon": {
+        "title": "Salon Settings",
+        "problems": [
+          "Clients don't know contacts and address",
+          "No centralized information",
+          "New clients can't find salon"
+        ],
+        "solutions": [
+          "Salon card with description and contacts",
+          "Address on map and route",
+          "Display in Maetry search"
+        ],
+        "benefits": [
+          "More client trust",
+          "Fewer calls",
+          "Additional client flow"
+        ]
+      },
+      "attraction": {
+        "title": "Client Attraction",
+        "problems": [
+          "Hard to tell about yourself and attract new clients",
+          "Inconvenient for clients to call"
+        ],
+        "solutions": [
+          "Booking link in social media and website",
+          "QR code for offline attraction"
+        ],
+        "benefits": [
+          "Additional client flow without costs",
+          "Client books themselves",
+          "Modern convenient tool"
+        ]
+      },
+      "workspaces": {
+        "title": "Work Spaces",
+        "problems": [
+          "Masters work in different places and lose appointments",
+          "Salon owners spend time on different systems"
+        ],
+        "solutions": [
+          "Switch between salons in one touch",
+          "Appointment synchronization",
+          "Salon network management"
+        ],
+        "benefits": [
+          "Time savings",
+          "Business control in one place",
+          "Versatility for masters"
+        ]
+      },
+      "support": {
+        "title": "Support",
+        "problems": [
+          "Owners afraid of new applications",
+          "No time to find instructions",
+          "Staff gets lost when working"
+        ],
+        "solutions": [
+          "Live support chat inside application",
+          "Tutorials for each screen",
+          "Knowledge base with instructions"
+        ],
+        "benefits": [
+          "Quick start without training",
+          "Minimum stress",
+          "Confidence in system work"
+        ]
+      }
+    }
+  },
+  "meta": {
+    "ambassador": {
+      "title": "Maetry Partnership Program - Earn with us",
+      "description": "Join Maetry partnership program. Earn by helping beauty salons automate business and manage client appointments.",
+      "keywords": "partnership program, maetry, beauty salon, management, automation, client appointments, work schedule"
+    }
+  }
+}

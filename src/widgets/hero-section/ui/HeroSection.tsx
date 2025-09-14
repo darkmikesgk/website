@@ -1,6 +1,6 @@
 import React from "react"
 
-import { BgImage, TextFabric, ImageTextFabric } from "@/shared/ui"
+import { BgImage, LocaleText, ImageTextFabric } from "@/shared/ui"
 
 const HeroSection = () => {
   return (
@@ -10,19 +10,21 @@ const HeroSection = () => {
       </div>
       <div className="flex flex-col absolute items-center xl:scale-105 2xl:scale-120">
         <div className="mb-[2%]">
-          <TextFabric
+          <LocaleText
             id={3}
-            text="multiple tasks — one ecosystem"
-          ></TextFabric>
+            ru="множество задач — одна экосистема"
+            en="multiple tasks — one ecosystem"
+          />
         </div>
 
         <ImageTextFabric id={1}></ImageTextFabric>
 
         <div className="mt-[5%] w-[80%] text-center">
-          <TextFabric
+          <LocaleText
             id={2}
-            text="Create your own ecosystem for record automation"
-          ></TextFabric>
+            ru="Создайте свою экосистему для автоматизации записей"
+            en="Create your own ecosystem for record automation"
+          />
         </div>
       </div>
     </section>

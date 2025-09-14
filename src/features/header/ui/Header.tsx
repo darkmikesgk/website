@@ -4,8 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 import logo from "@/public/images/logo.svg"
-import { ThemeSwitcher } from "@/shared/ui"
-import { TextFabric } from "@/shared/ui"
+import { ThemeSwitcher, LanguageSwitcher, LocaleText } from "@/shared/ui"
 
 import FreeTrial from "./FreeTrial"
 
@@ -29,24 +28,24 @@ const Header = () => {
             href={"/#about"}
             className="relative dark:hover:border-white hover:border-black/50 transition-all duration-200 border-b border-transparent"
           >
-            <TextFabric text={"about"} id={2}></TextFabric>
+            <LocaleText ru="О нас" en="About" id={2} />
           </Link>
           <Link
             href={"/#reviews"}
             className="relative dark:hover:border-white hover:border-black/50 transition-all duration-200 border-b border-transparent"
           >
-            <TextFabric text={"reviews"} id={2}></TextFabric>
+            <LocaleText ru="Отзывы" en="Reviews" id={2} />
           </Link>
           <Link
             href={"/#features"}
             className="relative dark:hover:border-white hover:border-black/50 transition-all duration-200 border-b border-transparent"
           >
-            <TextFabric text={"features"} id={2}></TextFabric>
+            <LocaleText ru="Возможности" en="Features" id={2} />
           </Link>
         </nav>
-        <div className="flex-1 hidden items-center xl:flex justify-end ">
+        <div className="flex-1 hidden items-center xl:flex justify-end gap-x-4">
+          <LanguageSwitcher variant="desktop" />
           <FreeTrial type="pc"></FreeTrial>
-          <div></div>
           <ThemeSwitcher></ThemeSwitcher>
         </div>
       </div>

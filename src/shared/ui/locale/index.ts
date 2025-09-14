@@ -1,1 +1,1 @@
-export { default as ButtonChangeLocale } from './ButtonChangeLocale'
+export { LanguageSwitcher } from './LanguageSwitcher';

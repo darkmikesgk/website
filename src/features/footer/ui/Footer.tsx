@@ -7,7 +7,7 @@ import Instagram from "@/public/images/Instagram.svg"
 import logo from "@/public/images/logo.svg"
 import Mail from "@/public/images/Mail.svg"
 import Telegram from "@/public/images/Telegram.svg"
-import { TextFabric } from "@/shared/ui"
+import { LocaleText } from "@/shared/ui"
 
 import LicenseButton from "./LicenseButton"
 import PrivacyButton from "./PrivacyButton"
@@ -29,19 +29,19 @@ const Footer = () => {
               href={"#about"}
               className="relative dark:hover:border-white hover:border-black/50 transition-all duration-200 border-b border-transparent"
             >
-              <TextFabric id={2} text={"about"}></TextFabric>
+              <LocaleText id={2} ru="О нас" en="About" />
             </Link>
             <Link
               href={"#reviews"}
               className="relative dark:hover:border-white hover:border-black/50 transition-all duration-200 border-b border-transparent"
             >
-              <TextFabric id={2} text={"reviews"}></TextFabric>
+              <LocaleText id={2} ru="Отзывы" en="Reviews" />
             </Link>
             <Link
               href={"#features"}
               className="relative dark:hover:border-white hover:border-black/50 transition-all duration-200 border-b border-transparent"
             >
-              <TextFabric id={2} text={"features"}></TextFabric>
+              <LocaleText id={2} ru="Возможности" en="Features" />
             </Link>
           </nav>
         </div>

@@ -4,7 +4,7 @@ import Link from "next/link"
 import Instagram from "@/public/images/Instagram.svg"
 import Mail from "@/public/images/Mail.svg"
 import Telegram from "@/public/images/Telegram.svg"
-import { TextFabric } from "@/shared/ui"
+import { LocaleText } from "@/shared/ui"
 
 import FreeTrial from "./FreeTrial"
 
@@ -13,13 +13,13 @@ export const MobileNav = () => {
     <div className="flex flex-col items-center justify-center h-[95%] px-[5%]">
       <nav className="flex flex-col gap-y-4 items-center font-light  justify-center w-full h-full flex-1">
         <Link href={"#about"}>
-          <TextFabric text="about" id={2} />
+          <LocaleText ru="О нас" en="About" id={2} />
         </Link>
         <Link href={"#reviews"}>
-          <TextFabric text="reviews" id={2} />
+          <LocaleText ru="Отзывы" en="Reviews" id={2} />
         </Link>
         <Link href={"#features"}>
-          <TextFabric text="features" id={2} />
+          <LocaleText ru="Возможности" en="Features" id={2} />
         </Link>
 
         <div className="flex gap-x-4 mt-[10%]">
