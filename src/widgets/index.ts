@@ -1,0 +1,6 @@
+export * from './hero-section'
+export * from './about-section'
+export * from './reviews-section'
+export * from './features-section'
+export * from './faq-section'
+export * from './landing-layout'
