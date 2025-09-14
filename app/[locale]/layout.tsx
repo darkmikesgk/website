@@ -1,13 +1,15 @@
-import { Manrope } from "next/font/google"
+import { Manrope } from "next/font/google";
 import { notFound } from 'next/navigation';
-import { locales } from '../../i18n';
+
+import type { Metadata } from "next";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 
-import type { Metadata } from "next"
+import { StoreProvider } from "@/shared/store";
 
-import "@/styles/globals.css"
-import { StoreProvider } from "@/shared/store"
+import { locales } from '../../i18n';
+
+import "@/styles/globals.css";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -35,7 +37,7 @@ export default async function LocaleLayout({
   params: {locale: string};
 }) {
   // Проверяем, что локаль поддерживается
-  if (!locales.includes(locale as any)) {
+  if (!locales.includes(locale as 'ru' | 'en')) {
     notFound();
   }
 

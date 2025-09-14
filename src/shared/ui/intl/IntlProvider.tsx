@@ -1,10 +1,12 @@
 "use client"
-import React, { useEffect, useState } from 'react'
-import { NextIntlClientProvider } from 'next-intl'
+
+import React, { useEffect, useState } from 'react';
+
+import { NextIntlClientProvider } from 'next-intl';
 
 // Статические импорты для отладки
-import ruMessages from '../../../messages/ru.json'
-import enMessages from '../../../messages/en.json'
+import enMessages from '../../../messages/en.json';
+import ruMessages from '../../../messages/ru.json';
 
 interface IntlProviderProps {
   children: React.ReactNode
@@ -12,7 +14,7 @@ interface IntlProviderProps {
 }
 
 export const IntlProvider = ({ children, locale }: IntlProviderProps) => {
-  const [messages, setMessages] = useState<any>({})
+  const [messages, setMessages] = useState<Record<string, unknown>>({})
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {

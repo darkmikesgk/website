@@ -1,7 +1,10 @@
 "use client"
-import React from "react"
-import { useTranslations } from 'next-intl'
-import styles from "@/styles/GradientAnimation.module.css"
+
+import React from "react";
+
+import { useTranslations } from 'next-intl';
+
+import styles from "@/styles/GradientAnimation.module.css";
 
 interface LocalizedTextFabricProps {
   translationKey: string
@@ -20,7 +23,7 @@ const LocalizedTextFabric = ({ id, translationKey, fallback }: LocalizedTextFabr
     if (text === translationKey) {
       text = fallback || translationKey
     }
-  } catch (error) {
+  } catch {
     // Если useTranslations не работает, используем fallback
     text = fallback || translationKey
   }

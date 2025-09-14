@@ -4,5 +4,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   // Middleware обрабатывает редирект на локализованные маршруты
-  return children;
+  return (
+    <html>
+      <body>
+        {children}
+      </body>
+    </html>
+  );
 }

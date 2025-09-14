@@ -118,6 +118,11 @@
     "readyToPartner": "Ready to become a partner?",
     "startEarning": "Start Earning",
     "partnerDescription": "Join our partnership program and earn by helping beauty salons grow",
+    "labels": {
+      "problem": "Problem:",
+      "solution": "Maetry Solution:",
+      "benefit": "Value for Salon:"
+    },
     "features": {
       "appointments": {
         "title": "Client Appointments",

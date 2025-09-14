@@ -1,20 +1,16 @@
-import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
-export async function generateMetadata({
-  params: {locale}
-}: {
-  params: {locale: string};
-}): Promise<Metadata> {
-  const t = await getTranslations('ambassador');
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('meta.ambassador');
 
   return {
-    title: t('meta.ambassador.title'),
-    description: t('meta.ambassador.description'),
-    keywords: t('meta.ambassador.keywords'),
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords'),
     openGraph: {
       title: t('title'),
-      description: t('subtitle'),
+      description: t('description'),
       url: "https://maetry.com/ambassador",
       type: 'website',
     },

@@ -1,15 +1,18 @@
-import React from "react"
-import { getTranslations } from 'next-intl/server';
-import type { Metadata } from 'next';
+import React from "react";
+
 import Script from 'next/script';
 
-import { LandingLayout } from "@/widgets/landing-layout"
+import type { Metadata } from 'next';
+
+import { LandingLayout } from "@/widgets/landing-layout";
 
 export async function generateMetadata({
-  params: {locale}
+  params
 }: {
   params: {locale: string};
 }): Promise<Metadata> {
+  const { locale } = params;
+  
   // Простая локализация метаданных
   const metadata = {
     ru: {
@@ -50,11 +53,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function LandingPage({
-  params: {locale}
-}: {
-  params: {locale: string};
-}) {
+export default async function LandingPage() {
   return (
     <>
       <Script

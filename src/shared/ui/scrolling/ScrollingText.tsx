@@ -1,9 +1,10 @@
 "use client"
 
-import React, { useEffect, useRef } from "react"
-import { useTranslations } from 'next-intl'
+import React, { useEffect, useRef } from "react";
 
-import styles from "@/styles/GradientAnimation.module.css"
+import { useTranslations } from 'next-intl';
+
+import styles from "@/styles/GradientAnimation.module.css";
 
 const ScrollingText = () => {
   const firstRef = useRef<HTMLDivElement>(null)
@@ -25,7 +26,7 @@ const ScrollingText = () => {
       if (text === translationKey) {
         text = fallback || translationKey
       }
-    } catch (error) {
+    } catch {
       // Если useTranslations не работает, используем fallback
       text = fallback || translationKey
     }
