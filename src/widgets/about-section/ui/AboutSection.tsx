@@ -3,7 +3,7 @@ import React from "react"
 import Image from "next/image"
 
 import MainPhoneBlock from "@/public/images/MainPhoneBLock2.png"
-import { ScrollingImage, ScrollingText, TextFabric } from "@/shared/ui"
+import { ScrollingImage, ScrollingText, LocalizedTextFabric } from "@/shared/ui"
 
 const AboutSection = () => {
   return (
@@ -21,22 +21,24 @@ const AboutSection = () => {
           <ScrollingImage></ScrollingImage>
         </div>
         <div className="xl:w-1/2 items-center xl:items-start w-full flex flex-col gap-y-2 mt-[5vh] xl:px-0 px-[10%]">
-          <TextFabric id={3} text={"our mission"}></TextFabric>
+          <LocalizedTextFabric 
+            id={3} 
+            translationKey="about.mission"
+            fallback="our mission"
+          />
 
-          <TextFabric
+          <LocalizedTextFabric
             id={1}
-            text={
-              "free your time from routine and your business from mistakes"
-            }
-          ></TextFabric>
+            translationKey="about.title"
+            fallback="free your time from routine and your business from mistakes"
+          />
 
           <div className="mt-[5%]">
-            <TextFabric
+            <LocalizedTextFabric
               id={2}
-              text={
-                "maetry allows entrepreneurs to grow their business from anywhere in the world via a mobile app"
-              }
-            ></TextFabric>
+              translationKey="about.description"
+              fallback="maetry allows entrepreneurs to grow their business from anywhere in the world via a mobile app"
+            />
           </div>
         </div>
       </div>

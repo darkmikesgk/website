@@ -5,12 +5,12 @@ import React, { useEffect, useState } from "react"
 import Link from "next/link"
 import { useSearchParams } from "next/navigation"
 
-import { TextFabric } from "@/shared/ui"
+import { LocalizedTextFabric } from "@/shared/ui"
 
 const InviteButton = () => {
   const searchParams = useSearchParams()
-  const id = searchParams.get("id")
-  const salonId = searchParams.get("salonId")
+  const id = searchParams?.get("id")
+  const salonId = searchParams?.get("salonId")
 
   const [url, setUrl] = useState<string>("")
 
@@ -25,7 +25,11 @@ const InviteButton = () => {
       href={url}
       className="w-[35vw] md:w-[25vw] xl:w-[15vw] bg-dark-bg dark:bg-white text-white rounded-[5px] py-[1.5vh] flex justify-center hover:scale-105 transition-all items-center"
     >
-      <TextFabric text={"Follow the link"} id={5}></TextFabric>
+      <LocalizedTextFabric 
+        translationKey="invite.followLink" 
+        id={5} 
+        fallback="Follow the link" 
+      />
     </Link>
   )
 }

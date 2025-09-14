@@ -7,12 +7,14 @@ import { useAppSelector } from "@/lib/hooks"
 import notice from "@/public/images/notice.svg"
 import online from "@/public/images/online.svg"
 import schedule from "@/public/images/schedule.svg"
-import { TextFabric } from "@/shared/ui"
+import { LocalizedTextFabric } from "@/shared/ui"
 import styles from "@/styles/GradientAnimation.module.css"
 
 interface FeatureTextProps {
-  title: string
-  description: string
+  titleKey: string
+  titleFallback: string
+  descriptionKey: string
+  descriptionFallback: string
 }
 interface ImageFetureProps {
   title: string
@@ -21,15 +23,15 @@ interface ImageFetureProps {
 const ImageFeature = ({ title }: ImageFetureProps) => {
   switch (title) {
     case "management schedule":
-      return <Image src={schedule} alt={""} width={48} height={48} className="w-[10vw] xl:w-[4vw]" style={{ width: "auto", height: "auto" }} />
+      return <Image src={schedule} alt={""} width={48} height={48} className="w-[10vw] xl:w-[4vw]" />
     case "notices of record":
-      return <Image src={notice} alt={""} width={48} height={48} className="w-[10vw] xl:w-[4vw]" style={{ width: "auto", height: "auto" }} />
+      return <Image src={notice} alt={""} width={48} height={48} className="w-[10vw] xl:w-[4vw]"/>
     case "online appointment for clients":
-      return <Image src={online} alt={""} width={48} height={48} className="w-[10vw] xl:w-[4vw]" style={{ width: "auto", height: "auto" }} />
+      return <Image src={online} alt={""} width={48} height={48} className="w-[10vw] xl:w-[4vw]"/>
   }
 }
 
-const Feature = ({ title, description }: FeatureTextProps) => {
+const Feature = ({ titleKey, titleFallback, descriptionKey, descriptionFallback }: FeatureTextProps) => {
   const DarkTheme = useAppSelector((state) => state.blackTheme.blackTheme)
 
   return (
@@ -42,11 +44,11 @@ const Feature = ({ title, description }: FeatureTextProps) => {
         )}
       </div>
       <div className="flex z-[1000] w-full h-full flex-col px-[2em] py-[2em]">
-        <ImageFeature title={title}></ImageFeature>
+        <ImageFeature title={titleFallback}></ImageFeature>
 
         <div className="flex w-full flex-col gap-y-4 mt-[10%] xl:mt-[25%]">
-          <TextFabric text={title} id={6}></TextFabric>
-          <TextFabric text={description} id={2}></TextFabric>
+          <LocalizedTextFabric translationKey={titleKey} fallback={titleFallback} id={6} />
+          <LocalizedTextFabric translationKey={descriptionKey} fallback={descriptionFallback} id={2} />
         </div>
       </div>
     </div>

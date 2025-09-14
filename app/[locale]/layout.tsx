@@ -1,8 +1,8 @@
 import { Manrope } from "next/font/google"
+import { notFound } from 'next/navigation';
+import { locales } from '../../i18n';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { notFound } from 'next/navigation';
-import { locales } from '@/shared/config/i18n';
 
 import type { Metadata } from "next"
 
@@ -39,6 +39,9 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  // Получаем сообщения для текущей локали
+  const messages = await getMessages({ locale });
+
   return (
     <html className={manrope.className} lang={locale}>
       <head>
@@ -46,7 +49,9 @@ export default async function LocaleLayout({
         <link rel="icon" sizes="32x32" href="/images/favicon.png" />
       </head>
       <body className="dark:bg-dark-bg dark:text-dark-text flex flex-col relative">
-        <StoreProvider>{children}</StoreProvider>
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          <StoreProvider>{children}</StoreProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   )

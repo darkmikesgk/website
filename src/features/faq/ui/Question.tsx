@@ -6,7 +6,7 @@ import Image from "next/image"
 import { toggleShowQuestion, setQuestion } from "@/entities/question"
 import { useAppDispatch, useAppSelector } from "@/lib/hooks"
 import closeButton from "@/public/images/closeImage.svg"
-import { TextFabric } from "@/shared/ui"
+import { LocalizedTextFabric } from "@/shared/ui"
 
 interface QuestionProps {
   id: number
@@ -49,7 +49,11 @@ const Question = ({ id, title, answer }: QuestionProps) => {
             className="h-full w-full flex text-start justify-between items-center"
           >
             <div className="w-[85%] xl:w-full">
-              <TextFabric id={4} text={title}></TextFabric>
+              <LocalizedTextFabric 
+                id={4} 
+                translationKey={`faq.q${id}.question`}
+                fallback={title}
+              />
             </div>
 
             <Image
@@ -73,7 +77,11 @@ const Question = ({ id, title, answer }: QuestionProps) => {
             maxHeight: `${maxHeight}px`
           }}
         >
-          <TextFabric id={2} text={answer} />
+          <LocalizedTextFabric 
+            id={2} 
+            translationKey={`faq.q${id}.answer`}
+            fallback={answer}
+          />
         </div>
       </div>
     </div>

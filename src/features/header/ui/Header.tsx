@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 import logo from "@/public/images/logo.svg"
-import { ThemeSwitcher, LanguageSwitcher, LocaleText } from "@/shared/ui"
+import { ThemeSwitcher, LanguageSwitcher, LocalizedTextFabric } from "@/shared/ui"
 
 import FreeTrial from "./FreeTrial"
 
@@ -28,19 +28,31 @@ const Header = () => {
             href={"/#about"}
             className="relative dark:hover:border-white hover:border-black/50 transition-all duration-200 border-b border-transparent"
           >
-            <LocaleText ru="О нас" en="About" id={2} />
+            <LocalizedTextFabric 
+              translationKey="navigation.about" 
+              id={2} 
+              fallback="About" 
+            />
           </Link>
           <Link
             href={"/#reviews"}
             className="relative dark:hover:border-white hover:border-black/50 transition-all duration-200 border-b border-transparent"
           >
-            <LocaleText ru="Отзывы" en="Reviews" id={2} />
+            <LocalizedTextFabric 
+              translationKey="navigation.reviews" 
+              id={2} 
+              fallback="Reviews" 
+            />
           </Link>
           <Link
             href={"/#features"}
             className="relative dark:hover:border-white hover:border-black/50 transition-all duration-200 border-b border-transparent"
           >
-            <LocaleText ru="Возможности" en="Features" id={2} />
+            <LocalizedTextFabric 
+              translationKey="navigation.features" 
+              id={2} 
+              fallback="Features" 
+            />
           </Link>
         </nav>
         <div className="flex-1 hidden items-center xl:flex justify-end gap-x-4">

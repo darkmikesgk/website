@@ -5,7 +5,7 @@ import Image from "next/image"
 import { Footer, PrivacyPolicy, LicensePolicy } from "@/features/footer"
 import { Header, MobileHeader } from "@/features/header"
 import prefooter from "@/public/images/prefooterImage.svg"
-import { BgImage, TextFabric, AppleButton, ImageTextFabric } from "@/shared/ui"
+import { BgImage, LocalizedTextFabric, AppleButton, ImageTextFabric } from "@/shared/ui"
 import { AboutSection } from "@/widgets/about-section"
 import { FAQSection } from "@/widgets/faq-section"
 import { FeaturesSection } from "@/widgets/features-section"
@@ -46,18 +46,24 @@ const LandingLayout = () => {
         <section id={"prefooter"} className="w-full px-[3.5%] h-[70vh] ">
           <div className="w-full h-full dark:bg-white rounded-[21px] flex items-center justify-center shadow-xl relative">
             <div className="z-[1000] flex text-invert items-center text-center flex flex-col w-[80%] xl:w-[40%] gap-y-3 xl:gap-y-0 dark:text-black text-[#fdfdfd]">
-              <TextFabric id={7} text="free trial"></TextFabric>
+              <LocalizedTextFabric 
+                id={7} 
+                translationKey="prefooter.title" 
+                fallback="free trial" 
+              />
               <div className="mt-[1%]">
-                <TextFabric
+                <LocalizedTextFabric
                   id={1}
-                  text="start growing your business today"
-                ></TextFabric>
+                  translationKey="prefooter.subtitle"
+                  fallback="start growing your business today"
+                />
               </div>
               <div className="mt-[5%] mb-[5%]">
-                <TextFabric
+                <LocalizedTextFabric
                   id={2}
-                  text="fast implementation - we will help you transfer the necessary data and customize the service for your tasks"
-                ></TextFabric>
+                  translationKey="prefooter.description"
+                  fallback="fast implementation - we will help you transfer the necessary data and customize the service for your tasks"
+                />
               </div>
               <AppleButton></AppleButton>
             </div>

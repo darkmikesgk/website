@@ -31,6 +31,84 @@
   "header": {
     "freeTrial": "Free Trial"
   },
+  "hero": {
+    "subtitle": "multiple tasks — one ecosystem",
+    "description": "Create your own ecosystem for record automation"
+  },
+  "about": {
+    "mission": "our mission",
+    "title": "free your time from routine and your business from mistakes",
+    "description": "maetry allows entrepreneurs to grow their business from anywhere in the world via a mobile app"
+  },
+  "reviews": {
+    "subtitle": "why choose us",
+    "title": "make business easier",
+    "julia": {
+      "name": "Julia",
+      "role": "Owner of a chain PROmanicure",
+      "text": "Maetry helps me plan every day in the salon. I understand how many clients are registered and for which services, who is new and who is regular. The client base is formed without my participation"
+    },
+    "nikita": {
+      "name": "Nikita",
+      "role": "founder Lui Philipp",
+      "text": "I know a lot of beauty salons that don't use online enrollment. We need to look at what mistakes our competitors are making and do better. Our main flow of clients comes through maetry"
+    },
+    "sofia": {
+      "name": "Sofia",
+      "role": "Manager of Bonny beauty salon",
+      "text": "The app is constantly being improved together with our network of salons. At maetry, we follow analytics and monitor feedback. This helps us to work on the quality of service and improve the level of service"
+    },
+    "irina": {
+      "name": "Irina",
+      "role": "Eyelash extension specialist",
+      "text": "I started spending less time analyzing the salon's financial performance. This option allows me to determine which services are generating more profit and which ones need to be adjusted or improved"
+    }
+  },
+  "features": {
+    "subtitle": "maetry features",
+    "title": "we adapt to any size business",
+    "management": {
+      "title": "management schedule",
+      "description": "Add new employees and make flexible work schedules without overlap"
+    },
+    "notifications": {
+      "title": "notices of record",
+      "description": "Automated appointment reminders to customers will help retain contact and increase profitability"
+    },
+    "onlineBooking": {
+      "title": "online appointment for clients",
+      "description": "recording without a call will allow you to process more requests and not waste time on confirming visits"
+    }
+  },
+  "faq": {
+    "subtitle": "faq",
+    "title": "frequent questions",
+    "q1": {
+      "question": "What features does the app provide?",
+      "answer": "To optimize the work of beauty salons maetry offers the following features: online appointment, automatic sending of notifications, formation of client base, analysis of financial indicators and integration with other services"
+    },
+    "q2": {
+      "question": "Will I be able to work in someone else's salon and own my own at the same time?",
+      "answer": "Yes, you can"
+    },
+    "q3": {
+      "question": "Will I be able to bring an employee into my salon?",
+      "answer": "Yes, you can. To do this, you will need to go to the salon and create an invitation, then send the link to a staff member"
+    },
+    "q4": {
+      "question": "Will I be able to create an entry for a client that doesn't have the application?",
+      "answer": "Yes, you can. To do this, dont select a client right away. After you create the record, you will have a link that you can send to them"
+    },
+    "q5": {
+      "question": "Will I be able to add a link to a social media post via maetry?",
+      "answer": "Yes, you can"
+    }
+  },
+  "prefooter": {
+    "title": "free trial",
+    "subtitle": "start growing your business today",
+    "description": "fast implementation - we will help you transfer the necessary data and customize the service for your tasks"
+  },
   "ambassador": {
     "title": "Partnership Program",
     "subtitle": "Earn by helping beauty salons automate their business",
@@ -200,6 +278,23 @@
         ]
       }
     }
+  },
+  "vitaliy": {
+    "question": "Any question?",
+    "supportTeam": "Support team",
+    "company": "Maetry",
+    "askQuestions": "ask questions"
+  },
+  "invite": {
+    "followLink": "Follow the link"
+  },
+  "footer": {
+    "privacyPolicy": "privacy policy",
+    "licenseAgreement": "license agreement"
+  },
+  "scrolling": {
+    "schedulePlanning": "schedule planning",
+    "analyticsIntegration": "analytics and integration"
   },
   "meta": {
     "ambassador": {

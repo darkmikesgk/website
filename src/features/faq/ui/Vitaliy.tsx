@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation"
 
 import Vitalik from "@/public/images/Vitalik.png"
 import VitaliyBG from "@/public/images/vitaliyBG.svg"
-import { TextFabric } from "@/shared/ui"
+import { LocalizedTextFabric } from "@/shared/ui"
 
 
 const Vitaliy = () => {
@@ -15,7 +15,11 @@ const Vitaliy = () => {
   return (
     <>
       <div className="w-full p-7 z-[1000] flex flex-col gap-y-4">
-        <TextFabric id={2} text={"Any question?"}></TextFabric>
+        <LocalizedTextFabric 
+          id={2} 
+          translationKey="vitaliy.question" 
+          fallback="Any question?" 
+        />
         <div className="flex items-center gap-x-3">
           <div className="w-[17vw] xl:w-[6vw]">
             <Image
@@ -28,15 +32,27 @@ const Vitaliy = () => {
           </div>
 
           <div className="flex flex-col ">
-            <TextFabric id={4} text={"Support team"}></TextFabric>
-            <TextFabric id={2} text={"Maetry"}></TextFabric>
+            <LocalizedTextFabric 
+              id={4} 
+              translationKey="vitaliy.supportTeam" 
+              fallback="Support team" 
+            />
+            <LocalizedTextFabric 
+              id={2} 
+              translationKey="vitaliy.company" 
+              fallback="Maetry" 
+            />
           </div>
         </div>
         <button
           onClick={() => router.push("https://t.me/maetry_app")}
           className="p-[5%] bg-white dark:active:bg-lightText/40 active:bg-dark-bg/10 transition-all duration-100 dark:bg-dark-bg rounded-[15px] min-h-[45px] flex w-full items-center mt-[2%] justify-center"
         >
-          <TextFabric id={5} text={"ask questions"}></TextFabric>
+          <LocalizedTextFabric 
+            id={5} 
+            translationKey="vitaliy.askQuestions" 
+            fallback="ask questions" 
+          />
         </button>
       </div>
       <Image

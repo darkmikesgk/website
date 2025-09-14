@@ -1,27 +1,20 @@
-"use client"
 import React from "react"
-import { useTranslations } from 'next-intl'
-import styles from "@/styles/GradientAnimation.module.css"
+import { getTranslations } from 'next-intl/server'
 
-interface LocalizedTextFabricProps {
+interface ServerTextFabricProps {
   translationKey: string
   id: number
   fallback?: string
 }
 
-const LocalizedTextFabric = ({ id, translationKey, fallback }: LocalizedTextFabricProps) => {
+const ServerTextFabric = async ({ id, translationKey, fallback }: ServerTextFabricProps) => {
   let text: string
-
+  
   try {
-    const t = useTranslations()
+    const t = await getTranslations()
     text = t(translationKey)
-    
-    // Проверяем, получили ли мы fallback или реальный перевод
-    if (text === translationKey) {
-      text = fallback || translationKey
-    }
-  } catch (error) {
-    // Если useTranslations не работает, используем fallback
+  } catch {
+    // Если getTranslations не работает, используем fallback
     text = fallback || translationKey
   }
 
@@ -56,7 +49,7 @@ const LocalizedTextFabric = ({ id, translationKey, fallback }: LocalizedTextFabr
 
     case 5:
       return (
-        <div className={styles.gradient__text}>
+        <div className="gradient__text">
           <p className="xl:text-[1.1vw] text-[3vw]">{text}</p>
         </div>
       )
@@ -85,4 +78,4 @@ const LocalizedTextFabric = ({ id, translationKey, fallback }: LocalizedTextFabr
   }
 }
 
-export default LocalizedTextFabric
+export default ServerTextFabric

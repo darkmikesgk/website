@@ -8,7 +8,7 @@ import { toggleHeader } from "@/entities/mobile-header"
 import { useAppDispatch } from "@/lib/hooks"
 import logo from "@/public/images/logo.svg"
 import mobileMenu from "@/public/images/mobile_menu.svg"
-import { ThemeSwitcher, LocaleText, LanguageSwitcher } from "@/shared/ui"
+import { ThemeSwitcher, LocalizedTextFabric, LanguageSwitcher } from "@/shared/ui"
 import styles from "@/styles/GradientAnimation.module.css"
 
 import LinksBar from "./SlideBarLinks"
@@ -36,7 +36,7 @@ const MobileHeader = () => {
             className="flex gap-x-2 h-full items-center ml-4"
           >
             <label className="text-[14px] md:text-[16px] lg:text-[22px] dark:text-dark-text flex">
-              <LocaleText ru="Меню" en="Menu" id={2} />
+              <LocalizedTextFabric translationKey="navigation.menu" id={2} fallback="menu" />
             </label>
             <Image
               src={mobileMenu}

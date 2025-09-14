@@ -13,7 +13,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
   variant = 'desktop' 
 }) => {
   const params = useParams()
-  const locale = params.locale as string
+  const locale = (params?.locale as string) || 'ru'
 
   const isActive = (lang: string) => locale === lang
 

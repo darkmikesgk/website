@@ -3,7 +3,7 @@ import React from "react"
 
 import Link from "next/link"
 
-import { TextFabric } from "@/shared/ui"
+import { LocalizedTextFabric } from "@/shared/ui"
 
 const PrivacyButton = () => {
   // const handleClick = () => {
@@ -13,7 +13,11 @@ const PrivacyButton = () => {
 
   return (
     <Link id={"privacy"} href={"/privacy.html"} target="_blank">
-      <TextFabric id={2} text={"privacy policy"}></TextFabric>
+      <LocalizedTextFabric 
+        id={2} 
+        translationKey="footer.privacyPolicy" 
+        fallback="privacy policy" 
+      />
     </Link>
   )
 }

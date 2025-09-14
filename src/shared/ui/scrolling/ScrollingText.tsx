@@ -1,12 +1,46 @@
 "use client"
 
 import React, { useEffect, useRef } from "react"
+import { useTranslations } from 'next-intl'
 
 import styles from "@/styles/GradientAnimation.module.css"
 
 const ScrollingText = () => {
   const firstRef = useRef<HTMLDivElement>(null)
   const secondRef = useRef<HTMLDivElement>(null)
+
+  // Компонент для повторения переведенного текста
+  const RepeatText = ({ translationKey, fallback, repeatCount = 8 }: { 
+    translationKey: string; 
+    fallback: string; 
+    repeatCount?: number;
+  }) => {
+    const t = useTranslations()
+    let text: string
+    
+    try {
+      text = t(translationKey)
+      
+      // Проверяем, получили ли мы fallback или реальный перевод
+      if (text === translationKey) {
+        text = fallback || translationKey
+      }
+    } catch (error) {
+      // Если useTranslations не работает, используем fallback
+      text = fallback || translationKey
+    }
+    
+    return (
+      <>
+        {Array.from({ length: repeatCount }, (_, i) => (
+          <span key={i}>
+            {text}
+            {i < repeatCount - 1 && " • "}
+          </span>
+        ))}
+      </>
+    )
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,22 +71,26 @@ const ScrollingText = () => {
       <div className="overflow-x-hidden w-full text-[8vw] xl:text-[6vw]">
         <div className="whitespace-nowrap">
           <div className="flex justify-center" ref={firstRef}>
-            <p className={styles.gradient__scrolling__text}>
-              schedule planning • schedule planning • schedule planning •
-              schedule planning • schedule planning • schedule planning •
-              schedule planning • schedule planning
-            </p>
+            <span className={styles.gradient__scrolling__text}>
+              <RepeatText 
+                translationKey="scrolling.schedulePlanning" 
+                fallback="schedule planning"
+                repeatCount={8}
+              />
+            </span>
           </div>
         </div>
       </div>
       <div className="overflow-hidden w-full text-[8vw] xl:text-[6vw]">
         <div className="whitespace-nowrap ">
           <div className="flex justify-center" ref={secondRef}>
-            <p className={styles.gradient__scrolling__text}>
-              analytics and integration • analytics and integration • analytics
-              and integration • analytics and integration • analytics and
-              integration • analytics and integration
-            </p>
+            <span className={styles.gradient__scrolling__text}>
+              <RepeatText 
+                translationKey="scrolling.analyticsIntegration" 
+                fallback="analytics and integration"
+                repeatCount={6}
+              />
+            </span>
           </div>
         </div>
       </div>
