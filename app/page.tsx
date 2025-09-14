@@ -1,6 +1,8 @@
 import React from "react"
-import { LandingLayout } from "@/widgets/landing-layout"
+
 import Head from "next/head"
+
+import { LandingLayout } from "@/widgets/landing-layout"
 
 export default function LandingPage() {
   return (

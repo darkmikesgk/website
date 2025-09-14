@@ -9,7 +9,7 @@ interface AmbassadorFeatureProps {
   benefits: string[]
 }
 
-const AmbassadorFeature = ({ icon, title, problems, solutions, benefits }: AmbassadorFeatureProps) => {
+const AmbassadorFeature = ({ title, problems, solutions, benefits }: AmbassadorFeatureProps) => {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-[20px] p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
       <h3 className="text-xl font-bold mb-6 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-600 pb-3">

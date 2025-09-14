@@ -2,9 +2,8 @@ import React from "react"
 
 import Image from "next/image"
 
-import { ScrollingImage, ScrollingText } from "@/shared/ui"
 import MainPhoneBlock from "@/public/images/MainPhoneBLock2.png"
-import { TextFabric } from "@/shared/ui"
+import { ScrollingImage, ScrollingText, TextFabric } from "@/shared/ui"
 
 const AboutSection = () => {
   return (

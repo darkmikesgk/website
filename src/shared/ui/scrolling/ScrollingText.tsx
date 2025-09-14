@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useEffect, useRef } from "react"
+
 import styles from "@/styles/GradientAnimation.module.css"
 
 const ScrollingText = () => {

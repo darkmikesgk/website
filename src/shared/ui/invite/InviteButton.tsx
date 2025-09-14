@@ -1,13 +1,14 @@
 "use client"
 
 import React, { useEffect, useState } from "react"
-import { useSearchParams } from "next/navigation"
+
 import Link from "next/link"
+import { useSearchParams } from "next/navigation"
+
 import { TextFabric } from "@/shared/ui"
 
 const InviteButton = () => {
   const searchParams = useSearchParams()
-  const invite = searchParams.get("invite")
   const id = searchParams.get("id")
   const salonId = searchParams.get("salonId")
 
@@ -17,7 +18,7 @@ const InviteButton = () => {
     if (id && salonId) {
       setUrl(`/clients/invite?id=${id}&salonId=${salonId}`)
     }
-  }, [invite])
+  }, [id, salonId])
 
   return (
     <Link

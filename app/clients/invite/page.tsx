@@ -1,14 +1,14 @@
 "use client"
-import Link from "next/link"
-import React, { Suspense } from "react"
-import Image from "next/image"
-import logo from "@/public/images/logo.svg"
-import { TextFabric, ThemeSwitcher, InviteButton, AppleButton } from "@/shared/ui"
-import { useRouter } from "next/navigation"
 
+import React, { Suspense } from "react"
+
+import Image from "next/image"
+import Link from "next/link"
+
+import logo from "@/public/images/logo.svg"
 import phones from "@/public/images/phones_customer.png"
+import { TextFabric, ThemeSwitcher, InviteButton, AppleButton } from "@/shared/ui"
 const ClientInvite = () => {
-  const router = useRouter()
 
   return (
     <div>

@@ -1,6 +1,9 @@
 "use client"
+
 import React, { useRef, useEffect } from "react"
+
 import Image from "next/image"
+
 import SecondaryPhoneBlock from "@/public/images/SecondaryPhoneBlock2.png"
 import SecondaryPhoneBlock2 from "@/public/images/SecondaryPhoneBlock2_2.png"
 

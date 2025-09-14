@@ -1,11 +1,13 @@
 "use client"
 
 import React from "react"
-import { Header, MobileHeader } from "@/features/header"
-import { Footer } from "@/features/footer"
-import { AmbassadorFeature } from "@/features/ambassador"
-import styles from "@/styles/GradientAnimation.module.css"
+
 import Head from "next/head"
+
+import { AmbassadorFeature } from "@/features/ambassador"
+import { Footer } from "@/features/footer"
+import { Header, MobileHeader } from "@/features/header"
+import styles from "@/styles/GradientAnimation.module.css"
 
 const AmbassadorPage = () => {
   const features = [
