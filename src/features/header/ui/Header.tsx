@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 import logo from "@/public/images/logo.svg"
-import { ThemeSwitcher, LanguageSwitcher, LocalizedTextFabric } from "@/shared/ui"
+import { ThemeSwitcher, LanguageSelector, LocalizedTextFabric } from "@/shared/ui"
 
 import FreeTrial from "./FreeTrial"
 
@@ -56,8 +56,8 @@ const Header = () => {
           </Link>
         </nav>
         <div className="flex-1 hidden items-center xl:flex justify-end gap-x-4">
-          <LanguageSwitcher variant="desktop" />
           <FreeTrial type="pc"></FreeTrial>
+          <LanguageSelector variant="desktop" />
           <ThemeSwitcher></ThemeSwitcher>
         </div>
       </div>

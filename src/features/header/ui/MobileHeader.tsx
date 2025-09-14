@@ -8,7 +8,7 @@ import { toggleHeader } from "@/entities/mobile-header"
 import { useAppDispatch } from "@/lib/hooks"
 import logo from "@/public/images/logo.svg"
 import mobileMenu from "@/public/images/mobile_menu.svg"
-import { ThemeSwitcher, LocalizedTextFabric, LanguageSwitcher } from "@/shared/ui"
+import { ThemeSwitcher, LocalizedTextFabric, LanguageSelector } from "@/shared/ui"
 import styles from "@/styles/GradientAnimation.module.css"
 
 import LinksBar from "./SlideBarLinks"
@@ -48,11 +48,11 @@ const MobileHeader = () => {
           </button>
         </div>
 
-        <div className="flex h-full items-center flex-1 justify-end hidden md:flex text-[14px] md:text-[16px] lg:text-[22px] gap-x-4">
-          <LanguageSwitcher variant="mobile" />
-          <button className="mr-[3%]">
+        <div className="flex h-full items-center flex-1 justify-end text-[14px] md:text-[16px] lg:text-[22px] gap-x-2 md:gap-x-4">
+          <button className="mr-[3%] hidden sm:block">
             <label className={styles.gradient__text}>free trial</label>
           </button>
+          <LanguageSelector variant="mobile" />
           <ThemeSwitcher></ThemeSwitcher>
         </div>
       </div>
