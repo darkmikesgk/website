@@ -61,25 +61,12 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
         <button
           onClick={() => setIsOpen(!isOpen)}
           type="button"
-          className="inline-flex items-center justify-center rounded-lg px-3 py-2 text-[14px] md:text-[16px] lg:text-[22px] font-medium transition-colors duration-200 bg-white dark:bg-dark-bg text-light-text dark:text-dark-text hover:bg-gray-50 dark:hover:bg-gray-800/50 font-sans"
+          className="inline-flex items-center justify-center rounded-lg px-3 py-2 text-[14px] md:text-[16px] lg:text-[22px] font-medium transition-colors duration-200 bg-white dark:bg-dark-bg text-light-text dark:text-dark-text font-sans"
           id={LANGUAGE_SELECTOR_ID}
           aria-expanded={isOpen}
-        >
-          {selectedLanguage.shortName}
-          <svg
-            className={`ml-2 h-4 w-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              fillRule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </button>
+      >
+        {selectedLanguage.shortName}
+      </button>
 
         {isOpen && (
           <div
@@ -116,24 +103,11 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
       <button
         onClick={() => setIsOpen(!isOpen)}
         type="button"
-        className="inline-flex items-center justify-center rounded-lg px-4 py-2 text-[1.1vw] font-medium transition-colors duration-200 bg-white dark:bg-dark-bg text-light-text dark:text-dark-text hover:bg-gray-50 dark:hover:bg-gray-800/50 font-sans"
+        className="inline-flex items-center justify-center rounded-lg px-4 py-2 text-[1.1vw] font-medium transition-colors duration-200 bg-white dark:bg-dark-bg text-light-text dark:text-dark-text font-sans"
         id={LANGUAGE_SELECTOR_ID}
         aria-expanded={isOpen}
       >
         {selectedLanguage.shortName}
-        <svg
-          className={`ml-2 h-4 w-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            fillRule="evenodd"
-            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-            clipRule="evenodd"
-          />
-        </svg>
       </button>
 
       {isOpen && (
