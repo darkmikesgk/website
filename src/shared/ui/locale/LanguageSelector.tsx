@@ -18,8 +18,8 @@ interface LanguageSelectorProps {
 }
 
 const languages: Language[] = [
-  { key: 'ru', name: 'Русский', shortName: 'RU', flag: 'ru' },
-  { key: 'en', name: 'English', shortName: 'EN', flag: 'us' }
+  { key: 'ru', name: 'Русский', shortName: 'ru', flag: 'ru' },
+  { key: 'en', name: 'English', shortName: 'en', flag: 'us' }
 ];
 
 export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ 
@@ -38,7 +38,6 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
     const pathWithoutLocale = pathname?.replace(`/${locale}`, '') || '/';
     return `/${newLocale}${pathWithoutLocale}`;
   };
-
 
   // Обработчик клика вне селектора
   const LANGUAGE_SELECTOR_ID = 'language-selector';
@@ -62,15 +61,13 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
         <button
           onClick={() => setIsOpen(!isOpen)}
           type="button"
-          className="inline-flex items-center justify-center rounded-md border border-gray-300 px-3 py-2 bg-white dark:bg-dark-bg text-sm font-medium text-gray-700 dark:text-dark-text hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          style={{ border: 'none', outline: 'none' }}
+          className="inline-flex items-center justify-center rounded-lg px-3 py-2 text-[14px] md:text-[16px] lg:text-[22px] font-medium transition-colors duration-200 bg-white dark:bg-dark-bg text-light-text dark:text-dark-text hover:bg-gray-50 dark:hover:bg-gray-800/50 font-sans"
           id={LANGUAGE_SELECTOR_ID}
           aria-expanded={isOpen}
         >
-          <span className={`fi fis fi-${selectedLanguage.flag} mr-2`} />
           {selectedLanguage.shortName}
           <svg
-            className="-me-1 ms-2 h-4 w-4"
+            className={`ml-2 h-4 w-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -78,7 +75,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
           >
             <path
               fillRule="evenodd"
-              d="M10.293 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4z"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
               clipRule="evenodd"
             />
           </svg>
@@ -86,7 +83,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
 
         {isOpen && (
           <div
-            className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-dark-bg ring-1 ring-black ring-opacity-5 z-50"
+            className="origin-top-right absolute right-0 mt-2 w-32 rounded-lg shadow-lg bg-white dark:bg-dark-bg z-[4000] overflow-hidden"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby={LANGUAGE_SELECTOR_ID}
@@ -99,13 +96,12 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                   onClick={() => setIsOpen(false)}
                   className={`${
                     selectedLanguage.key === language.key
-                      ? "bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white"
-                      : "text-gray-700 dark:text-dark-text"
-                  } flex px-4 py-2 text-sm text-start items-center hover:bg-gray-100 dark:hover:bg-gray-700 w-full`}
+                      ? "text-light-text dark:text-dark-text font-semibold"
+                      : "text-gray-500 dark:text-gray-400 hover:text-light-text dark:hover:text-dark-text"
+                  } flex px-4 py-2 text-[14px] md:text-[16px] lg:text-[18px] items-center justify-center transition-colors duration-150 w-full font-sans`}
                   role="menuitem"
                 >
-                  <span className={`fi fis fi-${language.flag} mr-3`} />
-                  <span className="truncate">{language.name}</span>
+                  <span className="truncate">{language.shortName}</span>
                 </Link>
               ))}
             </div>
@@ -120,15 +116,13 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
       <button
         onClick={() => setIsOpen(!isOpen)}
         type="button"
-        className="inline-flex items-center justify-center rounded-md border border-gray-300 px-3 py-2 bg-white dark:bg-dark-bg text-sm font-medium text-gray-700 dark:text-dark-text hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-        style={{ border: 'none', outline: 'none' }}
+        className="inline-flex items-center justify-center rounded-lg px-4 py-2 text-[1.1vw] font-medium transition-colors duration-200 bg-white dark:bg-dark-bg text-light-text dark:text-dark-text hover:bg-gray-50 dark:hover:bg-gray-800/50 font-sans"
         id={LANGUAGE_SELECTOR_ID}
         aria-expanded={isOpen}
       >
-        <span className={`fi fis fi-${selectedLanguage.flag} mr-2`} />
         {selectedLanguage.shortName}
         <svg
-          className="-me-1 ms-2 h-4 w-4"
+          className={`ml-2 h-4 w-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
@@ -136,7 +130,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
         >
           <path
             fillRule="evenodd"
-            d="M10.293 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4z"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
             clipRule="evenodd"
           />
         </svg>
@@ -144,7 +138,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
 
       {isOpen && (
         <div
-          className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-dark-bg ring-1 ring-black ring-opacity-5 z-50"
+          className="origin-top-right absolute right-0 mt-2 w-32 rounded-lg shadow-lg bg-white dark:bg-dark-bg z-[4000] overflow-hidden"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby={LANGUAGE_SELECTOR_ID}
@@ -157,13 +151,12 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                 onClick={() => setIsOpen(false)}
                 className={`${
                   selectedLanguage.key === language.key
-                    ? "bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white"
-                    : "text-gray-700 dark:text-dark-text"
-                } flex px-4 py-2 text-sm text-start items-center hover:bg-gray-100 dark:hover:bg-gray-700 w-full`}
+                    ? "text-light-text dark:text-dark-text font-semibold"
+                    : "text-gray-500 dark:text-gray-400 hover:text-light-text dark:hover:text-dark-text"
+                } flex px-4 py-2 text-[1vw] items-center justify-center transition-colors duration-150 w-full font-sans`}
                 role="menuitem"
               >
-                <span className={`fi fis fi-${language.flag} mr-3`} />
-                <span className="truncate">{language.name}</span>
+                <span className="truncate">{language.shortName}</span>
               </Link>
             ))}
           </div>
