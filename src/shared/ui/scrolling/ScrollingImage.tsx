@@ -5,16 +5,15 @@ import React, { useRef, useEffect } from "react"
 import Image from "next/image"
 import { useParams } from "next/navigation"
 
-import phonesAboutLeftLight from "@/public/images/phones_about_left_light.svg"
-import phonesAboutLeftLightRu from "@/public/images/phones_about_left_light_ru.svg"
+import { useAppSelector } from "@/lib/hooks"
 import phonesAboutLeftDark from "@/public/images/phones_about_left_dark.svg"
 import phonesAboutLeftDarkRu from "@/public/images/phones_about_left_dark_ru.svg"
-import phonesAboutRightLight from "@/public/images/phones_about_right_light.svg"
-import phonesAboutRightLightRu from "@/public/images/phones_about_right_light_ru.svg"
+import phonesAboutLeftLight from "@/public/images/phones_about_left_light.svg"
+import phonesAboutLeftLightRu from "@/public/images/phones_about_left_light_ru.svg"
 import phonesAboutRightDark from "@/public/images/phones_about_right_dark.svg"
 import phonesAboutRightDarkRu from "@/public/images/phones_about_right_dark_ru.svg"
-
-import { useAppSelector } from "@/lib/hooks"
+import phonesAboutRightLight from "@/public/images/phones_about_right_light.svg"
+import phonesAboutRightLightRu from "@/public/images/phones_about_right_light_ru.svg"
 
 const ScrollingImage = () => {
   const ref = useRef<HTMLDivElement>(null)

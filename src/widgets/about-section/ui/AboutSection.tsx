@@ -5,12 +5,11 @@ import React from "react"
 import Image from "next/image"
 import { useParams } from "next/navigation"
 
-import phonesAboutCenterLight from "@/public/images/phones_about_center_light.svg"
-import phonesAboutCenterLightRu from "@/public/images/phones_about_center_light_ru.svg"
+import { useAppSelector } from "@/lib/hooks"
 import phonesAboutCenterDark from "@/public/images/phones_about_center_dark.svg"
 import phonesAboutCenterDarkRu from "@/public/images/phones_about_center_dark_ru.svg"
-
-import { useAppSelector } from "@/lib/hooks"
+import phonesAboutCenterLight from "@/public/images/phones_about_center_light.svg"
+import phonesAboutCenterLightRu from "@/public/images/phones_about_center_light_ru.svg"
 import { ScrollingImage, ScrollingText, LocalizedTextFabric } from "@/shared/ui"
 
 const AboutSection = () => {

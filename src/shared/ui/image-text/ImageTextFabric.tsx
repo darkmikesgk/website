@@ -36,7 +36,7 @@ const ImageTextFabric = ({ id }: ImageTextFabricProps) => {
   const locale = (params?.locale as string) || 'en'
   
   // Выбираем изображения в зависимости от локали
-  const getImage = (enImage: any, ruImage: any) => {
+  const getImage = (enImage: string, ruImage: string) => {
     return locale === 'ru' ? ruImage : enImage
   }
 

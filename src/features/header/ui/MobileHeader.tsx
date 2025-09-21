@@ -6,11 +6,10 @@ import Link from "next/link"
 
 import { toggleHeader } from "@/entities/mobile-header"
 import { useAppDispatch, useAppSelector } from "@/lib/hooks"
+import closeImage from "@/public/images/closeImage.svg"
 import logo from "@/public/images/logo.svg"
 import mobileMenu from "@/public/images/mobile_menu.svg"
-import closeImage from "@/public/images/closeImage.svg"
 import { ThemeSwitcher, LocalizedTextFabric, LanguageSelector } from "@/shared/ui"
-import styles from "@/styles/GradientAnimation.module.css"
 
 import LinksBar from "./SlideBarLinks"
 
